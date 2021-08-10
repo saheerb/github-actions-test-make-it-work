@@ -7,14 +7,13 @@ on:
 jobs:
   license-check:
     runs-on: ubuntu-latest
-    container:
-      image: ghcr.io/armmbed/mbed-os-env:master-latest
-          
+
     steps:
       - 
         name: install dependencies
         shell: bash
         run: |
+          time docker pull mbedos/mbed-os-env:latest
           ls
           
       - 
