@@ -1,0 +1,26 @@
+name: PR Basic Checks
+
+on:
+  pull_request:
+  push:
+
+jobs:
+  license-check:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - 
+        name: install dependencies
+        shell: bash
+        run: |
+          ls
+          
+      - 
+        name: install dependencies
+        shell: bash
+        run: |
+          ls
+          lsls
+          ls
+          
+      
