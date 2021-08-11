@@ -4,7 +4,7 @@ on:
   pull_request:
 
 jobs:
-  license-check:
+  l1icense-check:
     runs-on: ubuntu-latest
 
     steps:
@@ -20,7 +20,7 @@ jobs:
         run: |
           ls
 
-  include-check:
+  i1nclude-check:
     runs-on: ubuntu-latest
 
     steps:
