@@ -13,7 +13,6 @@ jobs:
         name: install dependencies
         shell: bash
         run: |
-          time docker pull ghcr.io/armmbed/mbed-os-env:master-latest
           ls
           
       - 
@@ -21,7 +20,6 @@ jobs:
         shell: bash
         run: |
           ls
-          lsls
           ls
           
       
