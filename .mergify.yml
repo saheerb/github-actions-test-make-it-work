@@ -76,7 +76,7 @@ pull_request_rules:
 
       # Reviewers
       - "#changes-requested-reviews-by=0"
-      - "#approved-reviews-by>=1"
+      - "#approved-reviews-by>=0"
 
       # No conflict with the base branch
       - -conflict
@@ -130,7 +130,7 @@ pull_request_rules:
       - "label=needs: CI"
 
       # Reviewers
-      - "#approved-reviews-by>=1"
+      - "#approved-reviews-by>=0"
       - "#changes-requested-reviews-by=0"
 
       # CI green policy
