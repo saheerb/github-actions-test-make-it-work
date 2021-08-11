@@ -1,0 +1,41 @@
+name: PR Basic Checks
+
+on:
+  workflow_dispatch:
+
+jobs:
+  continuous-integration/jenkins/pr-head:
+    runs-on: ubuntu-latest
+
+    steps:
+      - 
+        name: install dependencies
+        shell: bash
+        run: |
+          ls
+          
+      - 
+        name: install dependencies
+        shell: bash
+        run: |
+          ls
+
+  jenkins-ci/test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - 
+        name: install dependencies
+        shell: bash
+        run: |
+          ls
+          
+      - 
+        name: install dependencies
+        shell: bash
+        run: |
+          ls
+
+
+
+          
