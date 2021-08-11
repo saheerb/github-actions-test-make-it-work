@@ -4,7 +4,7 @@ on:
   pull_request:
 
 jobs:
-  continuous-integration/jenkins/pr-head:
+  pr-head:
     runs-on: ubuntu-latest
 
     steps:
@@ -20,7 +20,7 @@ jobs:
         run: |
           ls
 
-  jenkins-ci/test:
+  jenkins-ci_test:
     runs-on: ubuntu-latest
 
     steps:

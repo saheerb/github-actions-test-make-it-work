@@ -50,7 +50,7 @@ pull_request_rules:
   - name: "label needs: work when Jenkins CI failed - pr head"
     conditions:
       # Jenkins CI failing
-      - check-failure~=continuous-integration/jenkins/pr-head
+      - check-failure~=pr-head
       - "label!=mergify skip"
     actions:
       label:
@@ -85,8 +85,8 @@ pull_request_rules:
       - check-success=license-check 
       - check-success=include-check
       # new CI needs to be done (neutral does not work, lets check if it failed or passed, if none, we need to run again)
-      - -check-success~=continuous-integration/jenkins/pr-head
-      - -check-failure~=continuous-integration/jenkins/pr-head
+      - -check-success~=pr-head
+      - -check-failure~=pr-head
     actions:
       label:
         add: ['needs: CI']
@@ -138,7 +138,7 @@ pull_request_rules:
       - check-success=include-check
 
       # Internal Jenkins - we rely on PR head to provide status
-      - check-success~=continuous-integration/jenkins/pr-head
+      - check-success~=pr-head
       # any of the jenkins pipeline needs to be green. We rely on not failure means all good (if skipped or executed) 
       - -check-failure~=^jenkins-ci
     actions:
