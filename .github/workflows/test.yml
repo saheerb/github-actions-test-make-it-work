@@ -13,7 +13,6 @@ jobs:
         name: install dependencies
         shell: bash
         run: |
-          time docker pull mbedos/mbed-os-env:latest
           ls
           
       - 
@@ -21,7 +20,20 @@ jobs:
         shell: bash
         run: |
           ls
-          lsls
+
+  include-check:
+    runs-on: ubuntu-latest
+
+    steps:
+      - 
+        name: install dependencies
+        shell: bash
+        run: |
           ls
           
-      
+      - 
+        name: install dependencies
+        shell: bash
+        run: |
+          ls
+
