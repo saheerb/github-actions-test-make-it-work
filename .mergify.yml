@@ -40,12 +40,6 @@ pull_request_rules:
       # GitHub Actions are failing
       - check-failure=license-check 
       - check-failure=include-check
-      - check-failure=style-check
-      - check-failure=docs-check
-      - check-failure=python-tests
-      - check-failure=pin-validation
-      - check-failure=cmake-checks
-      - check-failure=frozen-tools-check 
       - "label!=mergify skip"
     actions:
       label:
@@ -90,12 +84,6 @@ pull_request_rules:
       # CI green policy, at least GitHub Actions jobs should be green
       - check-success=license-check 
       - check-success=include-check
-      - check-success=style-check
-      - check-success=docs-check
-      - check-success=python-tests
-      - check-success=pin-validation
-      - check-success=cmake-checks
-      - check-success=frozen-tools-check 
       # new CI needs to be done (neutral does not work, lets check if it failed or passed, if none, we need to run again)
       - -check-success~=continuous-integration/jenkins/pr-head
       - -check-failure~=continuous-integration/jenkins/pr-head
@@ -148,12 +136,6 @@ pull_request_rules:
       # CI green policy
       - check-success=license-check 
       - check-success=include-check
-      - check-success=style-check
-      - check-success=docs-check
-      - check-success=python-tests
-      - check-success=pin-validation
-      - check-success=cmake-checks
-      - check-success=frozen-tools-check 
 
       # Internal Jenkins - we rely on PR head to provide status
       - check-success~=continuous-integration/jenkins/pr-head
