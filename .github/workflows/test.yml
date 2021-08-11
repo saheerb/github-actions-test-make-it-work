@@ -36,3 +36,36 @@ jobs:
         run: |
           ls
 
+  continuous-integration/jenkins/pr-head:
+    runs-on: ubuntu-latest
+
+    steps:
+      - 
+        name: install dependencies
+        shell: bash
+        run: |
+          ls
+          
+      - 
+        name: install dependencies
+        shell: bash
+        run: |
+          ls
+
+  jenkins-ci/test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - 
+        name: install dependencies
+        shell: bash
+        run: |
+          ls
+          
+      - 
+        name: install dependencies
+        shell: bash
+        run: |
+          ls
+
+          
