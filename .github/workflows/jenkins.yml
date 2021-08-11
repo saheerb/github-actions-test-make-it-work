@@ -1,7 +1,7 @@
 name: PR Basic Checks
 
 on:
-  workflow_dispatch:
+  pull_request:
 
 jobs:
   continuous-integration/jenkins/pr-head:
@@ -13,7 +13,7 @@ jobs:
         shell: bash
         run: |
           ls
-          
+          sleep 120
       - 
         name: install dependencies
         shell: bash
